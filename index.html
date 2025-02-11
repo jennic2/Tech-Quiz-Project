@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <div class="outermost-container">
+        <h1>eCommerce quiz</h1>
+        <h4 class="question-number-text">Question 1 of 3:</h4>
+        <p class="question-text">Which of the following is not a real eCommerce platform?</p>
+        <div class="inactive show-active" id="question-1">
+            <div class="quiz-answer-container">
+                <input type="radio" id="Shopify" name="quiz" value="Shopify" class="radio-buttons incorrect">
+                <label for="Shopify">Shopify</label>
+            </div>
+            <div class="quiz-answer-container">
+                <input type="radio" id="WooCommerce" name="quiz" value="WooCommerce" class="radio-buttons incorrect">
+                <label for="WooCommerce">WooCommerce</label>
+            </div>
+            <div class="quiz-answer-container">
+                <input type="radio" id="ShopCommerce" name="quiz" value="ShopCommerce" class="radio-buttons correct">
+                <label for="ShopCommerce">ShopCommerce</label>
+            </div>
+            <div class="quiz-answer-container">
+                <input type="radio" id="BigCommerce" name="quiz" value="BigCommerce" class="radio-buttons incorrect">
+                <label for="BigCommerce">BigCommerce</label>
+            </div>
+        </div>
+        <div class="inactive" id="question-2">
+            <div class="quiz-answer-container">
+                <input type="radio" id="save-time" name="quiz" value="save-time" class="radio-buttons incorrect">
+                <label for="save-time">To save time on things like store setups and migrations</label>
+            </div>
+            <div class="quiz-answer-container">
+                <input type="radio" id="design-extension" name="quiz" value="design-extension" class="radio-buttons incorrect">
+                <label for="design-extension">To extend the limited design options and functionalities of themes with custom code</label>
+            </div>
+            <div class="quiz-answer-container">
+                <input type="radio" id="deep-understanding" name="quiz" value="deep-understanding" class="radio-buttons incorrect">
+                <label for="deep-understanding">To provide support with a deep understanding of how the platform works and what its limitations are</label>
+            </div>
+            <div class="quiz-answer-container">
+                <input type="radio" id="all-above-1" name="quiz" value="all-above-1" class="radio-buttons correct">
+                <label for="all-above-1">All the above</label>
+            </div>
+        </div>
+        <div class="inactive" id="question-3">
+            <div class="quiz-answer-container">
+                <input type="radio" id="Well-paid" name="quiz" value="Well-paid" class="radio-buttons incorrect">
+                <label for="Well-paid">They are paid extremely well</label>
+            </div>
+            <div class="quiz-answer-container">
+                <input type="radio" id="high-demand" name="quiz" value="high-demand" class="radio-buttons incorrect">
+                <label for="high-demand">There is a high demand for them</label>
+            </div>
+            <div class="quiz-answer-container">
+                <input type="radio" id="knowledge-base" name="quiz" value="knowledge-base" class="radio-buttons incorrect">
+                <label for="knowledge-base">They need to know web development, the platform itself, and the liquid template language</label>
+            </div>
+            <div class="quiz-answer-container">
+                <input type="radio" id="all-above-2" name="quiz" value="all-above-2" class="radio-buttons correct">
+                <label for="all-above-2">All the above</label>
+            </div>
+        </div>
+        <div class="new-question-container">
+            <button class="new-question inactive" id="prev-question">&lt; Prev</button>
+            <button class="new-question" id="next-question">Next ></button>
+        </div>
+        <div class="error inactive">
+            <p>*Pick an answer to advance to next question</p>
+        </div>
+        <h2 class="hidden" id="final-message-1"></h2>
+        <h2 class="hidden" id="final-message-2"></h2>
+        <h2 class="hidden" id="final-message-3"></h2>
+        <h2 class="hidden" id="final-message-4"></h2>
+        <button class="new-question inactive" id="restart">Restart</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

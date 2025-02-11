@@ -1,0 +1,64 @@
+body {
+    background-color: #f1f1f1;
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+h1 {
+    font-weight: 450;
+}
+
+h4 {
+    font-weight: 400;
+}
+
+label {
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+}
+
+.outermost-container {
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 375px;
+    width: 100%;
+    padding-left: 15px;
+}
+
+.quiz-answer-container {
+    background-color: #e8eaed;
+    padding: 3px;
+    border: 1px solid white;
+}
+
+.new-question {
+    margin-top: 10px;
+    background-color: #4ebf5d;
+    color: white;
+    height: 30px;
+    width: 75px;
+    font-weight: 800;
+    border: 1px solid grey;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.inactive {
+    display: none;
+}
+
+.show-active {
+    display: block;
+}
+
+.error {
+    color: red;
+}
+
+.new-question-container {
+    display: flex;
+}
